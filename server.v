@@ -25,7 +25,6 @@ fn new_app() &App {
 
 ['/']
 pub fn (mut app App) page_home() vweb.Result {
-	// all this constants can be accessed by src/templates/page/home.html file.
 	page_title := 'Some animals that you can hear'
 
 	list_of_animals := [
@@ -43,8 +42,5 @@ pub fn (mut app App) page_home() vweb.Result {
 		}
 	]
 
-	// println(list_of_animals)
-	// $vweb.html() in `<folder>_<name> vweb.Result ()` like this
-	// render the `<name>.html` in folder `./templates/<folder>`
 	return $vweb.html()
 }
