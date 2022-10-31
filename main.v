@@ -1,3 +1,5 @@
+import images
+
 fn main() {
-	server(8080)
+	images.server(8080)
 }
